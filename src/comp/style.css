@@ -1,0 +1,225 @@
+/* <div className="box">
+            <div className="inputData" >
+            <h1>Nice</h1>
+            <input type="search" value={search} className="inputField" onChange={(event) =>{
+            setSearch(event.target.value);
+            }}/>
+            </div>
+
+   {
+       !city ?(<p className="errormsg">No Data Found</p>):(
+       <div> 
+           <div className="info">
+           <h2 className="location">
+           <i className="fa fa-street-view" aria-hidden="true"></i>
+           {search}
+           </h2>
+           <h1 className="temp">
+           {city.temp}°Cel
+           </h1>
+           <h3 className="tempmin_max">Min:{city.temp_min}°Cel | Max :{ city.temp_max}°Cel</h3>
+           </div>
+   
+           <div className="wave-one"></div>
+           <div className="wave-two"></div>
+           <div className="wave-three"></div>
+           </div> */
+/* body{
+    background-image: url("https://cdn.wallpapersafari.com/54/91/nBoDu7.jpg");
+    background-repeat: no-repeat;
+    background-size:100%;
+    z-index: 1;
+} */
+.box{
+    display: grid;
+    color: white;
+    grid-gap: 1px;
+    max-width: 20%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    border-radius: 30px;
+    position: relative;
+    left: -15px;
+    /* top: 100px;
+    left: 565px; */
+    /* border: 2px solid rgb(207, 243, 4); */
+    /* background-color: rgb(252, 4, 120); */
+    /* background-image: url("https://st.depositphotos.com/1275255/2842/i/950/depositphotos_28426083-stock-photo-nature-light-abstract-web-page.jpg"); */
+    background: linear-gradient(135deg,rgb(255, 0, 149),rgb(10, 240, 248));
+    /* box-shadow:5px 5px 50px 5px rgb(245, 4, 4) inset; */
+    /* box-shadow: 5px 10px 18px #888888; */
+    margin: auto;
+    width: 50%;
+    min-width: 350px;
+  /* min-width: 100px; */
+  margin-bottom: 2.0rem;
+  min-height: 15.4rem;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.44);
+  
+}
+
+/* .box::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 110%;
+    height: 110%;
+    filter: blur(25px);
+    transform: translateY(30px) scale(0.9);
+} */
+/* .box:nth-child(1),
+.box:nth-child(1)::before{
+    background: linear-gradient(135deg,rgb(255, 0, 149),rgb(10, 240, 248));
+} */
+.inputData{display: inline; border-radius: 20px;
+    /* border: 2px solid red; */
+    padding: 10px;
+    margin: 10px;
+}
+.inputField{display: inline; border-radius: 20px;
+    border: 1px solid rgb(252, 251, 251);
+    font-size: 130%;
+    text-align: center;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.44);
+}
+.inputField:focus, input:focus{
+    outline: none;
+}
+.errormsg{display: inline; border-radius: 20px;
+    /* border: 1px solid red; */
+
+}
+.info{display:inline-flex ; border-radius: 20px;
+    flex-direction: column; font-size: 120%;
+    /* border: 1px solid red; */
+
+}
+.location{display: inline; border-radius: 20px;
+    /* border: 1px solid red; */
+
+}
+.temp{display: inline; border-radius: 20px;
+    /* background-color: rgb(0, 132, 255); */
+    /* box-shadow:5px 5px 50px 5px rgb(4, 245, 213) ; */
+    /* width: auto; */
+    /* border: 1px solid red; */
+
+}
+.top{
+    display: grid;
+    /* margin-left: auto; */
+    /* margin-right: auto; */
+    /* width: 70%; */
+    text-align: center;
+    border-radius: 40px;
+    /* position: relative; */
+    /* left:12rem; */
+    /* justify-content: center; */
+    /* border: 1px solid rgb(29, 28, 27); */
+    font-size: 150%;
+    padding: 5px;
+    margin: 5px;
+    text-shadow:5px 5px 1px rgb(238, 248, 92);
+    text-shadow: 5px 10px 18px #bcf127;
+    text-decoration:underline;
+    margin-bottom: 106px;
+    background-image: url("https://us.123rf.com/450wm/rondale/rondale1602/rondale160200022/51742837-stock-vector-vector-white-background-panel-seamless-volumed-texture-for-graphic-or-website-template-layout-interi.jpg?ver=6");
+    background-repeat: no-repeat;
+    /* z-index: 1; */
+    background-size:100%;
+    /* opacity: 0.9; */
+    position: relative;
+    animation-name: ak;
+    animation-duration: 4s  ;
+    animation-iteration-count: infinite ;
+    animation: ak 5s ease-in-out  infinite ;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.44);
+}
+ /* .top strong{
+     color: black;
+     z-index: 6;
+ } */
+.tempmin_max{display: inline; border-radius: 20px;
+    /* border: 1px solid red; */
+
+}
+.light{
+    position: fixed;
+    background-color: rgb(122, 134, 119);
+    padding: 20px;
+    border-radius: 40px;
+    bottom: 40px;
+    left: 40px;
+}
+.fa-moon{
+    color: white;
+
+}
+.dark-mode{
+    background-color: rgb(0, 0, 0);
+    animation-name: ex;
+  animation-duration: 4s  ;
+  animation-iteration-count: infinite ;
+  animation: ex 7s ease-in-out   ;
+  /* z-index: 2; */
+}
+.dark-mode .top{
+    color: rgb(0, 247, 255);
+    /* background-color: rgb(49, 2, 2); */
+    background: linear-gradient(180deg,rgb(201, 184, 248),rgb(4, 0, 14));
+}
+.dark-mode .box{
+    box-shadow: 0px 8px 16px 0px rgba(252, 250, 250, 0.44);
+}
+.fa-street-view{
+    position: relative;
+  animation-name: example;
+  animation-duration: 4s  ;
+  animation-iteration-count: infinite ;
+  animation: example 7s ease-in-out  infinite ;
+}
+@keyframes example {
+    0%   { left:0px; 
+    }
+    /* 25%  {background-color:yellow; left:-11px; } */
+    50%   {left:-50px;}
+    /* 75%  {background-color:green; left:3px;} */
+    100% { left:0px; }
+  }
+  @keyframes ex {
+    0%   {  background-color: rgb(255, 255, 255);}
+    /* 25%  {background-color:yellow;  background-color: rgb(0, 0, 0);; } */
+    50%   { background-color: rgb(112, 112, 112);}
+    /* 75%  {background-color:green;  background-color: rgb(0, 0, 0); */
+    100% {  background-color: rgb(0, 0, 0);}
+  }
+  /* i{
+      padding: 5px;
+  } */
+
+  /* .top{
+    animation: e 7s ease-in-out  infinite ;
+  } */
+  @keyframes ak {
+    0%   { text-shadow: 2px 5px 10px  #fd0303;
+        box-shadow: 0px 8px 16px 0px rgb(255, 7, 7);}
+    /* 25%  {background-color:yellow; left:-11px; } */
+    50%   {text-shadow: 2px 5px 10px  #04f8a7;
+        box-shadow: 0px 8px 16px 0px rgb(3, 250, 196);}
+    /* 75%  {background-color:green; left:3px;} */
+    100% { text-shadow: 2px 5px 10px   #fd0b03;
+        box-shadow: 0px 8px 16px 0px rgb(255, 4, 4);}
+  }
+
+  @media(max-width :1000px){
+body{
+    font-size: 0.8rem;
+    
+}
+.box{
+    margin: auto;
+}
+  }
