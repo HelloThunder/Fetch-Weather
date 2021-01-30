@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/Fetch-Weather/static/css/main.041e3fb0.chunk.css",
-    "main.js": "/Fetch-Weather/static/js/main.d8dfeb64.chunk.js",
-    "main.js.map": "/Fetch-Weather/static/js/main.d8dfeb64.chunk.js.map",
+    "main.js": "/Fetch-Weather/static/js/main.3130b721.chunk.js",
+    "main.js.map": "/Fetch-Weather/static/js/main.3130b721.chunk.js.map",
     "runtime-main.js": "/Fetch-Weather/static/js/runtime-main.b024dae7.js",
     "runtime-main.js.map": "/Fetch-Weather/static/js/runtime-main.b024dae7.js.map",
     "static/js/2.0468dd93.chunk.js": "/Fetch-Weather/static/js/2.0468dd93.chunk.js",
@@ -15,6 +15,6 @@
     "static/js/runtime-main.b024dae7.js",
     "static/js/2.0468dd93.chunk.js",
     "static/css/main.041e3fb0.chunk.css",
-    "static/js/main.d8dfeb64.chunk.js"
+    "static/js/main.3130b721.chunk.js"
   ]
 }
