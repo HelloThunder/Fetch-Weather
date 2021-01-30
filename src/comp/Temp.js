@@ -12,7 +12,7 @@ var a = search.toUpperCase();
 
 useEffect(()=>{
     const fetchApi =async()=>{
-        const url =`http://api.openweathermap.org/data/2.5/weather?q=${search}&units=metric&appid=37655ef9ce2bd7bdd2d4a7b02d87d137`;
+        const url =`https://api.openweathermap.org/data/2.5/weather?q=${search}&units=metric&appid=37655ef9ce2bd7bdd2d4a7b02d87d137`;
         const response =await fetch(url);
         
         const resJson =await response.json();
