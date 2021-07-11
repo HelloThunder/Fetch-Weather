@@ -16,7 +16,7 @@ useEffect(()=>{
         const response =await fetch(url);
         
         const resJson =await response.json();
-        // console.log(resJson);
+        console.log(resJson);
         setCity(resJson.main);
         // console.log(resJson);
     };
@@ -44,7 +44,8 @@ useEffect(()=>{
            <h1 className="temp">
            {city.temp}°Cel
            </h1>
-           <h3 className="tempmin_max">Min:{city.temp_min}°Cel | Max :{ city.temp_max}°Cel</h3>
+           {/* <h3>{city.weather[0].main}</h3> */}
+           <h4 className="tempmin_max">Min:{city.temp_min}°Cel | Max :{ city.temp_max}°Cel</h4>
            </div>
    
            {/* <div className="wave-one"></div>
